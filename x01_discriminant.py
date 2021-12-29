@@ -21,9 +21,11 @@ float
 This will be a signed value for the discriminant. It may be positive or negative
 
 """
-
+print((4**2)-(4*(1*4)))
 def discriminant(a,b,c):
-  return None
+  x=((b**2)-(4*(a*c)))
+
+  return x
 
 
 def main():
@@ -31,5 +33,5 @@ def main():
   assert discriminant(1,-1,-6) == 25
   assert discriminant(2,3,8) == -55
   
-if __name__=="__main__:
+if __name__=="__main__":
   main()

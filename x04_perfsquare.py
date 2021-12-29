@@ -28,18 +28,21 @@ def perfSquare(discriminant):
     True - is perfect
     False - is not perfect
   '''
-  
-  return None
+  x=((b**2)-(4*(a*c)))
+  if x==0:
+    return True
+  else:
+    return False
 
 def main():
   #uncomment the lines that match how you have created your function
-  #assert perfSquare(1,4,4) == True
+  assert perfSquare(1,4,4) == True
   #assert perfSquare(0) == True
   
-  #assert perfSquare(1,-1,-6) == False
+  assert perfSquare(1,-1,-6) == False
   #assert perfSquare(25) == False
   
-  #assert perfSquare(2,3,8) == False
+  assert perfSquare(2,3,8) == False
   #assert perfSquare(-55) == False
 
   

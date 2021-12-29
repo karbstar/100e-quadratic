@@ -25,19 +25,22 @@ def numSolutions(a,b,c):
   return: 
   integer for number of solutions.  It should be 0, 1 or 2
   """
-  
-  return None
-
+  if discriminant == 0:
+    return 1
+  if discriminant <0:
+    return 0
+  if discriminant >0:
+      return 2
 def main():
   # Uncomment the lines that make use of your function definition
   #assert numSolutions(2,3,8) == 0
-  #assert numSolutions(-55) == 0
+  assert numSolutions(-55) == 0
   
   #assert numSolutions(1,4,4) == 1
-  #assert numSolutions(0) == 1
+  assert numSolutions(0) == 1
   
   #assert numSolutions(1,-1,-6) == 2
-  #assert numSolutions(25) == 2
+  assert numSolutions(25) == 2
 
 if __name__ == "__main__":
   main()
