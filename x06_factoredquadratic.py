@@ -21,23 +21,23 @@ def Factored(a,b,c):
   x=None
   g= a*x**2+b*x+c
   if a==1:
-    for i in range(c)
-    i=i+1
-    f=c/i
-    v=f+c
-    if v==b:
-      t=i
-      pass
-  
-  elif a>1:
-      n=c*a
-      for i in range(n)
+    for i in range(c):
       i=i+1
-      f=n/i
-      v=f+n
+      f=c/i
+      v=f+c
       if v==b:
         t=i
         pass
+  
+  elif a>1:
+      n=c*a
+      for i in range(n):
+        i=i+1
+        f=n/i
+        v=f+n
+        if v==b:
+          t=i
+          pass
       try: 
         t2=int(t/a)
         s=True
