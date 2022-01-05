@@ -27,7 +27,8 @@ def Factored(a,b,c):
       v=f+c
       if v==b:
         t=i
-        pass
+
+        break
   
   elif a>1:
       n=c*a
@@ -65,7 +66,9 @@ def Factored(a,b,c):
       except:
         l=False
       if l==True:
-        x=f"(x+{f2})"
+        x2=f"(x+{f2})"
+        reb=[x,x2]
+        return reb
       else:
         for i in range(f):
           i=i+1
@@ -78,11 +81,10 @@ def Factored(a,b,c):
           except:
             continu=False
           if continu==True:
-            x=f"({j}x+{m})"
-          
-      pass
-  return None
-
+            x2=f"({j}x+{m})"
+            pass
+          ret=[x,x2]
+          return ret
 def main():
   assert "(x + 3)" in Factored(1,1,-6) == True
   assert "(x - 2)" in Factored(1,1,-6) == True
